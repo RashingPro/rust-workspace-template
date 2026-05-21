@@ -18,7 +18,7 @@ rust-version = "1.94.1"
 [workspace.lints.clippy]
 all = { level = "deny", priority = -1 }
 needless_return = { level = "allow" }
-new_without_default = { level = "allow" }
+new_without_default = { level = "warn" }
 
 [profile.release]
 lto = true
