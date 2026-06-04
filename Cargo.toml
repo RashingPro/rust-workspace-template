@@ -16,12 +16,12 @@ edition = "2024"
 rust-version = "1.94.1"
 
 [workspace.lints.clippy]
-needless_return = "allow"
-new_without_default = "warn"
-incompatible_msrv = "forbid"
 allow_attributes_without_reason = "deny"
 branches_sharing_code = "warn"
 collapsible_else_if = "deny"
+incompatible_msrv = "forbid"
+needless_return = "allow"
+new_without_default = "warn"
 
 [profile.release]
 lto = true
