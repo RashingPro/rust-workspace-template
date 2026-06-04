@@ -68,8 +68,8 @@ abc = { workspace = true }
 To lint and format your whole project, use:
 
 ```shell
-cargo +nightly clippy
-cargo +nightly fmt
+cargo clippy
+cargo fmt
 ```
 
 > Q: Why we use `nightly`?\
@@ -82,11 +82,11 @@ cargo +nightly fmt
 
 - Enable `Run external linter on the fly`
 - Select `Clippy` as linter
-- Select `nightly` under `Channel` selector
+- Select `[default]` under `Channel` selector
 
 `Settings > Rust > Rustfmt`
 
-- Select `nightly` under `Channel` selector
+- Select `[default]` under `Channel` selector
 - Enable `Use Rustfmt instead of the built-in formatter`
 - Click `Configure actions on save` and enable following:
     - `Reformat code`
