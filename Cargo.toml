@@ -18,6 +18,7 @@ rust-version = "1.94.1"
 [workspace.lints.clippy]
 needless_return = "allow"
 new_without_default = "warn"
+incompatible_msrv = "forbid"
 
 [profile.release]
 lto = true
