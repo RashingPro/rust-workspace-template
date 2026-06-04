@@ -72,9 +72,9 @@ cargo clippy
 cargo fmt
 ```
 
-> Q: Why we use `nightly`?\
+> Q: Why we use nightly toolchain?\
 > A: Because some features, like disabling `trailing_comma` only available with nightly toolchain.\
-> Note: it might require you to install nightly toolchain.
+> Note: it might require you to install nightly toolchain. In most cases, use `rustup toolchain install nightly`
 
 ### JetBrains RustRover
 
