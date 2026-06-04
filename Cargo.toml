@@ -20,6 +20,7 @@ needless_return = "allow"
 new_without_default = "warn"
 incompatible_msrv = "forbid"
 allow_attributes_without_reason = "deny"
+branches_sharing_code = "warn"
 
 [profile.release]
 lto = true
