@@ -16,6 +16,8 @@ edition = "2024"
 rust-version = "1.94.1"
 
 [workspace.lints.clippy]
+perf = { level = "deny", priority = -1 }
+
 allow_attributes_without_reason = "deny"
 branches_sharing_code = "warn"
 collapsible_else_if = "deny"
