@@ -13,7 +13,7 @@ keywords = []
 categories = []
 
 edition = "2024"
-rust-version = "1.94.1"
+rust-version = "1.85.1"
 
 [workspace.lints.clippy]
 perf = { level = "deny", priority = -1 }
