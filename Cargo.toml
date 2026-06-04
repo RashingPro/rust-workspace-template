@@ -19,6 +19,7 @@ rust-version = "1.94.1"
 needless_return = "allow"
 new_without_default = "warn"
 incompatible_msrv = "forbid"
+allow_attributes_without_reason = "deny"
 
 [profile.release]
 lto = true
