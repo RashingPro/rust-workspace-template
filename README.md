@@ -1,9 +1,9 @@
 # Rust Workspace Template
 
 This project is a template containing Cargo workspace. Use it if you want to split your big project into several
-subpackages, but share same settings and build it all together.
+crates, but share same settings and build it all together.
 
-## Adding new subpackage
+## Adding new crate
 
 1. Create folder containing `Cargo.toml` and either `src/main.rs` or `src/lib.rs`
 2. `Cargo.toml` content:
@@ -28,14 +28,14 @@ subpackages, but share same settings and build it all together.
     
     [dependencies]
     ```
-3. Add new subpackage name to `workspace.members` in root `Cargo.toml`
-4. If this subpackage is needed to be dependency of other subpackages
+3. Add new crate name to `workspace.members` in root `Cargo.toml`
+4. If this crate is needed to be dependency of other crates
     - Add following line to `workspace.dependencies` in root `Cargo.toml`
       ```toml
       [workspace.dependencies]
       example = { path = "example" }
       ```
-    - In dependent subpackage, add this to `dependencies`
+    - In dependent crate, add this to `dependencies`
       ```toml
       [dependencies]
       example.workspace = true
@@ -43,7 +43,7 @@ subpackages, but share same settings and build it all together.
 
 ## Adding external dependency
 
-You should not add external dependency directly in subpackage's `Cargo.toml`. Instead, add it in root `Cargo.toml`:
+You should not add external dependency directly in crate's `Cargo.toml`. Instead, add it in root `Cargo.toml`:
 
 ```toml
 [workspace.dependencies]
@@ -52,7 +52,7 @@ abc = "1.2.3"
 abc = { version = "1.2.3" }
 ```
 
-Then, add following line to subpackage's `Cargo.toml`
+Then, add following line to crate's `Cargo.toml`
 
 ```toml
 [dependencies]
