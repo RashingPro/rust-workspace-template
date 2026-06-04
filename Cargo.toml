@@ -21,6 +21,7 @@ new_without_default = "warn"
 incompatible_msrv = "forbid"
 allow_attributes_without_reason = "deny"
 branches_sharing_code = "warn"
+collapsible_else_if = "deny"
 
 [profile.release]
 lto = true
