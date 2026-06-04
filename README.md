@@ -90,6 +90,5 @@ cargo fmt
 - Enable `Use Rustfmt instead of the built-in formatter`
 - Click `Configure actions on save` and enable following:
     - `Reformat code`
-    - `Optimize imports`
     - `Rearrange code`
     - `Run code cleanup`
