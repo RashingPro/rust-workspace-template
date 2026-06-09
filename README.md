@@ -5,7 +5,7 @@ crates, but share same settings and build it all together.
 
 ## Adding new crate
 
-1. Create folder containing `Cargo.toml` and either `src/main.rs` or `src/lib.rs`
+1. Create a new directory under `crates` folder containing `Cargo.toml` and either `src/main.rs` or `src/lib.rs`
 2. `Cargo.toml` content:
     ```toml
     [package]
@@ -28,12 +28,11 @@ crates, but share same settings and build it all together.
     
     [dependencies]
     ```
-3. Add new crate name to `workspace.members` in root `Cargo.toml`
-4. If this crate is needed to be dependency of other crates
+3. If this crate is needed to be dependency of other crates
     - Add following line to `workspace.dependencies` in root `Cargo.toml`
       ```toml
       [workspace.dependencies]
-      example = { path = "example" }
+      example = { path = "cargo/example" }
       ```
     - In dependent crate, add this to `dependencies`
       ```toml
