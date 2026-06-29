@@ -3,5 +3,6 @@ unstable_features = true
 format_code_in_doc_comments = true
 format_macro_matchers = true
 format_strings = true
+float_literal_trailing_zero = "Never"
 imports_granularity = "Module"
 trailing_comma = "Never"
