@@ -6,4 +6,5 @@ format_strings = true
 float_literal_trailing_zero = "Never"
 imports_granularity = "Module"
 newline_style = "Unix"
+normalize_comments = true
 trailing_comma = "Never"
