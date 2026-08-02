@@ -28,6 +28,7 @@ incompatible_msrv = "forbid"
 needless_return = "allow"
 new_without_default = "warn"
 str_to_string = "warn"
+use_self = "deny"
 
 [profile.release]
 lto = true
